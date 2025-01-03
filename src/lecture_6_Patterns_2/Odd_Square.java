@@ -2,7 +2,7 @@ package lecture_6_Patterns_2;
 
 import java.util.Scanner;
 
-public class Sum_Pattern {
+public class Odd_Square {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -12,27 +12,20 @@ public class Sum_Pattern {
 
 		for(int i=1; i<=n; i++)
 		{		
-			for(int j=1; j<=i; j++)
+			for(int j=1; j<=n-i+1; j++)
 			{
-				if(i==j)
-				{
-					System.out.print(j);
-					break;
-				}
-				System.out.print(j+"+");
+				System.out.print((j+i-1)*2-1);
 			}
-			System.out.print("=");
-			
-			int sum=0;
-			for(int j=0; j<=i; j++)
+			for(int j=1; j<i; j++)
 			{
-				sum+=j;
+				System.out.print((j)*2-1);
 			}
-			System.out.println(sum);
+			System.out.println("");
 			
 		}
 		
 		sc.close();
+
 	}
 
 }
