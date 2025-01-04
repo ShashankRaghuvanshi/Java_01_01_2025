@@ -26,6 +26,10 @@ public class Writing_More_Functions {
 	
 	public static void print_Till_N(int n)
 	{
+		if(n<=0)
+		{
+			return;
+		}
 		for(int i=1; i<=n; i++)
 		{
 			System.out.println(i);
