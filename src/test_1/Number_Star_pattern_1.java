@@ -22,6 +22,7 @@ public class Number_Star_pattern_1 {
 			}
 			System.out.println();
 		}
+		sc.close();
 
 	}
 
