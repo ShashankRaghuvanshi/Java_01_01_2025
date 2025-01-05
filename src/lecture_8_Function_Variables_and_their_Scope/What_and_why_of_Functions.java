@@ -11,6 +11,19 @@ public class What_and_why_of_Functions {
 		}
 		return ans;
 	}
+	
+	public static int ncr(int n, int r)
+	{
+		int num = factorial(n);
+		
+		int den1 = factorial(r);
+		
+		int den2 = factorial(n-r);
+		
+		int ans = num/(den1 * den2);
+		
+		return ans;
+	}
 
 	public static void main(String[] args) {
 		
@@ -19,13 +32,7 @@ public class What_and_why_of_Functions {
 		int n = sc.nextInt();
 		int r = sc.nextInt();
 		
-		int num = factorial(n);
-		
-		int den1 = factorial(r);
-		
-		int den2 = factorial(n-r);
-		
-		int ans = num/(den1 * den2);
+		int ans = ncr(n,r);
 		
 		System.out.println(ans);
 		
