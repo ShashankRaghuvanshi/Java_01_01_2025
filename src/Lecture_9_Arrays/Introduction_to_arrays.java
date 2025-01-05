@@ -23,8 +23,6 @@ public class Introduction_to_arrays {
 		
 		System.out.println(d[0]);
 		
-		
-
 	}
 
 }
