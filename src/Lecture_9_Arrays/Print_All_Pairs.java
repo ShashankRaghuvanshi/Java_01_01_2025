@@ -8,7 +8,7 @@ public class Print_All_Pairs {
 	{
 		for(int i=0; i<input.length-1; i++) {
 			for(int j=i; j<input.length-1; j++) {
-				System.out.print(input[i]+","+input[j+1]+" ");
+				System.out.print("("+input[i]+","+input[j+1]+")"+" ");
 			}
 			System.out.println();
 		}
