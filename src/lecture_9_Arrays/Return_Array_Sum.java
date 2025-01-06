@@ -1,16 +1,15 @@
-package Lecture_9_Arrays;
+package lecture_9_Arrays;
 
 import java.util.Scanner;
 
-public class Linear_Search {
+public class Return_Array_Sum {
 	
-	public static int linearSearch(int input[],int index) {
-		for(int i=0; i<input.length; i++){
-			if(input[i] == index) {
-				return i;
-			}
+	public static int returnArraySum(int input []) {
+		int sum = 0;
+		for(int i=0; i<input.length; i++) {
+			sum += input[i];
 		}
-		return -1;
+		return sum;
 	}
 
 	public static int[] takeInput() {
@@ -36,10 +35,9 @@ public class Linear_Search {
 		for(int i=0; i<test; i++)
 		{
 			int arr[] = takeInput();
-			int X = sc.nextInt();
-			int index = linearSearch(arr,X);
-			System.out.println(index);
-		}
+			int sum = returnArraySum(arr);
+			System.out.println(sum);
+		}	
 	}
 
 }

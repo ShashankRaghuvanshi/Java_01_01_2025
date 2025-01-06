@@ -1,17 +1,9 @@
-package Lecture_9_Arrays;
+package lecture_9_Arrays;
 
 import java.util.Scanner;
 
-public class Return_Array_Sum {
+public class Moving_Into_Functions {
 	
-	public static int returnArraySum(int input []) {
-		int sum = 0;
-		for(int i=0; i<input.length; i++) {
-			sum += input[i];
-		}
-		return sum;
-	}
-
 	public static int[] takeInput() {
 		Scanner sc = new Scanner(System.in);
 		int size = sc.nextInt();
@@ -30,14 +22,8 @@ public class Return_Array_Sum {
 	}
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int test = sc.nextInt();
-		for(int i=0; i<test; i++)
-		{
-			int arr[] = takeInput();
-			int sum = returnArraySum(arr);
-			System.out.println(sum);
-		}	
+		int arr[] = takeInput();
+		print(arr);
 	}
 
 }

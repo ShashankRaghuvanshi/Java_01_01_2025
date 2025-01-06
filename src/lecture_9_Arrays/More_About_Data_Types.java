@@ -1,4 +1,4 @@
-package Lecture_9_Arrays;
+package lecture_9_Arrays;
 
 public class More_About_Data_Types {
 

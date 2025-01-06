@@ -1,4 +1,4 @@
-package Lecture_9_Arrays;
+package lecture_9_Arrays;
 import java.util.Scanner;
 public class Assingnment_Pair_Sum {
 	public static int pairSum(int arr[], int x) {

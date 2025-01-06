@@ -1,4 +1,4 @@
-package Lecture_9_Arrays;
+package lecture_9_Arrays;
 import java.util.Scanner;
 public class Assignment_Intersection_of_two_arrays {
 	
