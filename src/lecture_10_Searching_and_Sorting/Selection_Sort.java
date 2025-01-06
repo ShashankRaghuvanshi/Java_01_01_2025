@@ -8,15 +8,17 @@ public class Selection_Sort {
 		
 		for(int i=0; i<input.length-1; i++) {
 			int min_index = i;
+			int min = input[min_index];
 			for(int j=i+1; j < input.length; j++) {
-				if(input[j] < input[min_index]) {
+				if(input[j] < min) {
 					min_index = j;
 				}
 			}
 			
-			int temp = input[min_index];
-			input[min_index] = input[i];
-			input[i] = temp;
+			if(min_index != i) {
+				input[min_index] = input[i];
+				input[i] = min;
+			}
 		}
 	}
 
