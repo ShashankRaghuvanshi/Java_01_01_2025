@@ -22,7 +22,7 @@ public class RemoveConsecutiveDuplicates {
 	public static void main(String[] args) {
 		Scanner sr = new Scanner(System.in);
 		String str = sr.nextLine();
-		String ans = removeConsecutiveDuplicates(str);;
+		String ans = removeConsecutiveDuplicates(str);
 
 		System.out.println(ans);
 		
