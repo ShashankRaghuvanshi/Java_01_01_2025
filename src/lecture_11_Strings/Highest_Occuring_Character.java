@@ -4,22 +4,22 @@ import java.util.Scanner;
 
 public class Highest_Occuring_Character {
 	
-public static char highestOccuringChar(String str) {
+	public static char highestOccuringChar(String str) {
 		
-		int frequecy [] = new int[255];
-		char ch= ' ';
+		int frequency [] = new int[256];
+		char result= ' ';
 		for(int i=0; i<str.length(); i++){
-			frequecy[str.charAt(i)]++;
+			frequency[str.charAt(i)]++;
 		}
 
 		int maxfrq = Integer.MIN_VALUE;
-		for(int i=0; i<frequecy.length; i++){
-			if(frequecy[i] > maxfrq){
-				maxfrq = frequecy[i];
-				ch = (char)i;
+		for(int i=0; i<frequency.length; i++){
+			if(frequency[i] > maxfrq){
+				maxfrq = frequency[i];
+				result = (char)i;
 			}
 		}
-		return ch;
+		return result;
 
 	}
 
