@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ColumnWiseTraversal {
 	
-public static int[] printColWise(int [][]a) {
+	public static int[] printColWise(int [][]a) {
         
         int ans[] = new int[(a.length * a[0].length)];
         int count = 0;
