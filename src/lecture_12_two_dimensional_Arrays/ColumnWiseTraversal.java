@@ -2,7 +2,7 @@ package lecture_12_two_dimensional_Arrays;
 
 import java.util.Scanner;
 
-public class CurrentSubmissionCol {
+public class ColumnWiseTraversal {
 	
 public static int[] printColWise(int [][]a) {
         
