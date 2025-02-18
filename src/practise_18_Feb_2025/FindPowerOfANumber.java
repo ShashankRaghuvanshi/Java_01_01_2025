@@ -22,5 +22,4 @@ public class FindPowerOfANumber {
 		System.out.println(totalPower);
 		scanner.close();
 	}
-
 }
